@@ -1,0 +1,146 @@
+/* User template CSS with variables that python will replace later. */
+/* All comments will also be automatically removed because Santae does not work well with them. */
+
+
+
+
+/* Header CSS =============================================================== */
+
+
+/* Change the color of the "Hide CSS" button */
+.btn-warning{
+	transform: scale(0.8);
+	background-color: #f4e6f5;
+	border: none;
+	color: black;
+}
+
+/* Change the color of the "Seach" button */
+/* A direct color change can not be made but a filter works */
+.btn.btn-primary.search_btn{
+	filter: brightness(0) saturate(100%) invert(13%) sepia(29%) saturate(7177%) hue-rotate(252deg) brightness(93%) contrast(90%);
+}
+
+/* Text color for welcome username, number of player online, and time */
+#servertime, .flex-double b, .flex-auto b {
+	color: #432781;
+}
+
+
+/* Navigation bar text color*/
+a#mainmenu_main.nav-link.dropdown-toggle, a#mainmenu_explore.nav-link.dropdown-toggle, a#mainmenu_pets.nav-link.dropdown-toggle, a#mainmenu_social.nav-link.dropdown-toggle, a#mainmenu_personal.nav-link.dropdown-toggle, a#mainmenu_support.nav-link.dropdown-toggle{
+	color: ^navColor^;
+}
+
+/* Bell, mail, username color*/
+.loginLogoutforum ul li a {
+	color: ^navColor^;
+}
+
+/* User settings panel and other drop downs color */
+.navbar-nav .dropdown-menu {
+	background-color: ^navDropColor^;
+}
+
+/* Date text color */
+.time {
+	color: ^navColor^;
+}
+
+/* Change the color of the currency text */
+/* Direct text color change can't be made but a filter works */
+.currency_link{
+	filter: brightness(0) saturate(100%) invert(98%) sepia(14%) saturate(6713%) hue-rotate(300deg) brightness(131%) contrast(110%);
+}
+
+
+
+
+/* Body CSS =============================================================== */
+
+
+/* Color gradient for background*/
+section {
+	background-color: transparent;
+	box-shadow: #6c0a2d 0 0em 15em 13em, 
+				#51052a 0 0em 15em 52em,
+				#6c0b5f 0 0em 15em 900em;
+}
+
+/* Color for main box that all user information sits in*/
+.forumcontainer {
+	background-color: #efe6d8;
+}
+
+
+
+
+
+
+/* Background and text color for boxes that show User Details, Description, Pets, ect.*/
+.card {
+	background-color: #ba6ec9;
+}
+h5.card-title {
+	color: #04294b;
+}
+p.card-text {
+	color: #04294b;
+}
+
+
+
+/* Remove black boxes around pets. */
+#profile_pets .col-12.col-sm-6.col-lg-3 div {
+	visibility: hidden; 
+}
+#profile_pets .col-12.col-sm-6.col-lg-3 div img, #profile_pets .col-12.col-sm-6.col-lg-3 div a {
+	visibility: visible;  
+}
+
+
+/* Repositon and color First Edition badge */
+#petprofile_first_edition_icon {
+	position: relative;
+	top: 0.3em;
+	left: -1em;
+	opacity: 1;
+	width: 20%;
+	filter: hue-rotate(-60deg) saturate(1.05);
+}
+
+/* Color pet names */
+/* Additional styling can be added to change or remove underline */
+.col-12.col-sm-6.col-lg-3 a {
+	position: relative;
+	top: 0.4em;
+	left: -0.5em;
+	color: #450e42;
+}
+
+
+
+
+
+/* Hide white background in trophy section */
+.bg-light {
+	visibility: hidden;
+}
+.bg-light div {
+	visibility: visible;
+}
+
+
+
+
+
+
+
+/* Footer CSS =============================================================== */
+
+/* Remove extra sapcing for the footer */
+/* Also match the color with the last one in the gradient */
+footer.webFooter {
+  margin: 0;
+  background-color: #7827a5;
+}
